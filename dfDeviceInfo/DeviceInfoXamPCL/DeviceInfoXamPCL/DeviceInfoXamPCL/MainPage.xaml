@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DeviceInfoXamPCL"
+             x:Class="DeviceInfoXamPCL.MainPage"
+             >
+    <ContentPage.Resources>
+        <ResourceDictionary>
+          <Style x:Key="LabelLogo" TargetType="Label">
+            <Setter
+                Property="HorizontalOptions"
+                Value="End" />
+            <Setter
+                Property="VerticalOptions"
+                Value="Center" />
+            <Setter
+                Property="FontSize"
+                Value="Small" />
+            <Setter
+                Property="FontAttributes"
+                Value="Bold" />
+          </Style>
+          <Style x:Key="LabelHeader" TargetType="Label">
+                  <Setter
+                      Property="HorizontalOptions"
+                      Value="Center" />
+                  <Setter
+                      Property="VerticalOptions"
+                      Value="Center" />
+                  <Setter
+                      Property="FontSize"
+                      Value="Large" />
+                  <Setter
+                      Property="FontAttributes"
+                      Value="Bold" />
+           </Style>
+           <Style x:Key="LabelKey" TargetType="Label">
+                <Setter
+                    Property="HorizontalOptions"
+                    Value="Start" />
+                <Setter
+                    Property="VerticalOptions"
+                    Value="Center" />
+                <Setter
+                    Property="FontSize"
+                    Value="Medium" />
+				                <Setter
+                    Property="FontAttributes"
+                    Value="Bold" />
+            </Style>
+            <Style x:Key="LabelValue" TargetType="Label">
+                <Setter
+                    Property="HorizontalOptions"
+                    Value="Start" />
+                <Setter
+                    Property="VerticalOptions"
+                    Value="Center" />
+                <Setter
+                    Property="FontSize"
+                    Value="Medium" />
+				        <Setter Property="TextColor" Value="Red" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+  <StackLayout Padding="20">
+    <StackLayout Orientation="Horizontal">
+      <Label Text="dfDeviceInfo" Style="{StaticResource LabelHeader}"/>
+      <Label Text=">---)o>" Style="{StaticResource LabelLogo}"/>
+    </StackLayout>
+    <StackLayout Orientation="Vertical">
+      <Label Text="Device Unique Hardware Id:  " 
+				Style="{StaticResource LabelKey}" />
+      <Label Text="?" x:Name="Label_HW_Id" 
+				VerticalOptions="StartAndExpand" 
+				HorizontalOptions="StartAndExpand"
+				Style="{StaticResource LabelValue}"/>
+    </StackLayout>
+    <StackLayout Orientation="Vertical">
+      <Label Text="Friendly Name:  " 				
+				Style="{StaticResource LabelKey}"  />
+      <Label Text="?" x:Name="Label_FriendlyName" 	Style="{StaticResource LabelValue}"/>
+    </StackLayout>
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Manuf:  " Style="{StaticResource LabelKey}" />
+      <Label Text="?" x:Name="Label_Manuf" 	Style="{StaticResource LabelValue}"/>
+    </StackLayout>
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Model:  "  Style="{StaticResource LabelKey}" />
+      <Label Text="?" x:Name="Label_Model" 	Style="{StaticResource LabelValue}"/>
+    </StackLayout>
+    <StackLayout Orientation="Horizontal">
+      <Label Text="OS:  "  Style="{StaticResource LabelKey}" />
+      <Label Text="?" x:Name="Label_OS" 	Style="{StaticResource LabelValue}"/>
+    </StackLayout>
+	<StackLayout Orientation="Horizontal">
+      <Label Text="OSVersion:  "  Style="{StaticResource LabelKey}" />
+      <Label Text="?" x:Name="Label_OSVersion" 	Style="{StaticResource LabelValue}"/>
+    </StackLayout>
+		
+  </StackLayout> 
+</ContentPage>

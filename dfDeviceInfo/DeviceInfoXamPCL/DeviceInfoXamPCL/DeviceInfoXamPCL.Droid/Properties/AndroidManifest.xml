@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.devfish.xamarin" android:versionCode="1" android:versionName="1">
+	<uses-sdk android:minSdkVersion="19" />
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+	<application android:label="DeviceInfoXamPCL.Droid"></application>
+</manifest>
