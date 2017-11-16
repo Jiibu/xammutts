@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ConnectivityPluginSample"
+             x:Class="ConnectivityPluginSample.MainPage"
+             Title="xam.plugs.connectivity">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <Style x:Key="StdLabel" TargetType="Label">
+        <Setter Property="FontSize" Value="Medium"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+      </Style>
+      <Style x:Key="AccentLabel" TargetType="Label">
+        <Setter Property="FontSize" Value="Medium"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="TextColor" Value="Accent" />
+      </Style>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+
+  <StackLayout>
+    <StackLayout Orientation="Horizontal">
+      <Label Text="IsConnected: " Style="{StaticResource StdLabel}"/>
+      <Label x:Name="Label_IsConnected" Text="?" Style="{StaticResource AccentLabel}" />
+    </StackLayout>
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Connection Types: " Style="{StaticResource StdLabel}"/>
+      <Label x:Name="Label_ConnectionTypes" Text="?" Style="{StaticResource AccentLabel}"/>     
+    </StackLayout>
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Bandwidths: " Style="{StaticResource StdLabel}"/>
+      <Label x:Name="Label_Bandwidths" Text="?" Style="{StaticResource AccentLabel}"/>
+    </StackLayout>
+    
+    <StackLayout Orientation="Vertical">
+      <StackLayout Orientation="Horizontal">
+        <Button x:Name="Button_IsReachable" Text="IsReachable" FontSize="Medium"/>
+        <Entry x:Name="Entry_ReachableHost" Text="www.devfish.net" FontSize="Medium" TextColor="Accent"/>
+      </StackLayout>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="IsReachable:" FontSize="Medium"/>
+        <Label x:Name="Label_IsReachableStatus" Text="click button to find out"  FontSize="Medium" TextColor="Accent"/>
+      </StackLayout>
+    </StackLayout>
+    <StackLayout Orientation="Vertical">
+      <StackLayout Orientation="Horizontal">
+        <Button x:Name="Button_IsRemoteReachable" Text="IsRemoteReachable" FontSize="Medium"/>
+        <Entry x:Name="Entry_RemoteReachableHost" Text="xamlnative.com" FontSize="Medium" TextColor="Accent"/>
+      </StackLayout>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="IsRemoteReachable:" Style="{StaticResource StdLabel}"/>
+        <Label x:Name="Label_IsRemoteReachableStatus" Text="click button to find out"  Style="{StaticResource AccentLabel}"/>
+      </StackLayout>    </StackLayout>
+  </StackLayout>
+  
+</ContentPage>
