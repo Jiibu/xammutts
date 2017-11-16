@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HttpPlay.DelegateHandlerPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Start" VerticalOptions="Start" Margin="20">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="URL"/>
+                <Entry x:Name="Entry_URL" Text="http://www.github.com/jhealy/awesome"/>
+            </StackLayout>
+            <Button WidthRequest="400" Text="DoIt" x:Name="Button_DoIt" Clicked="Button_DoIt_Clicked"/>
+            <ScrollView BackgroundColor="AliceBlue">
+                <Label x:Name="Label_Result" Text="... result ..."/>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

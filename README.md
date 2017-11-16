@@ -1,2 +1,2 @@
-# xammutts
-Mutt xamarin projects
+# Xamarin Mutts
+Miscellaneous Xamarin projects I've wished to share.  Post issues, some may not be current...
