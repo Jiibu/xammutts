@@ -13,7 +13,10 @@ namespace ZXingPlay
         {
             InitializeComponent();
 
-            MainPage = new ZXingPlay.MainPage();
+            // jhealy: this MUST be a nav page, watch out
+            // MainPage = new ZXingPlay.MainPage();
+
+            MainPage = new NavigationPage(new ZXingPlay.MainPage());
         }
 
         protected override void OnStart()
